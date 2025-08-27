@@ -163,9 +163,7 @@ with st.container():
                 output.seek(0)
                 
                 # Obtém o nome do mês atual para incluir no nome do arquivo
-                locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-                mes_atual = datetime.now().strftime('%B').capitalize()
-                nome_arquivo = f"alunos_com_falta_{mes_atual}.pdf"
+                nome_arquivo = "alunos_com_falta.pdf"
 
                 # Cria o botão de download para o usuário
                 st.download_button(
